@@ -1,0 +1,18 @@
+function fetchData(url){
+    const isValid = checkUrl(url);
+    isValid ? classifyUrl(url) : invalidUrl(url);
+}
+
+function checkUrl(url){
+    return true;
+}
+
+function classifyUrl(url){
+    console.log('Done')
+}
+
+function invalidUrl(url){
+    console.log(`${url} is Invalid`);
+}
+
+fetchData('https://www.fb.com/');
